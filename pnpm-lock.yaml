@@ -14,9 +14,6 @@ importers:
       '@preact-signals/safe-react':
         specifier: 0.8.1
         version: 0.8.1(@babel/core@7.26.0)(@swc/helpers@0.5.15)(react@19.0.0)
-      '@preact/signals-react':
-        specifier: 2.3.0
-        version: 2.3.0(react@19.0.0)
       '@radix-ui/react-dropdown-menu':
         specifier: 2.1.4
         version: 2.1.4(@types/react-dom@19.0.2(@types/react@19.0.2))(@types/react@19.0.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -38,6 +35,9 @@ importers:
       drizzle-orm:
         specifier: 0.38.2
         version: 0.38.2(@prisma/client@6.1.0(prisma@6.1.0))(@types/react@19.0.2)(postgres@3.4.5)(prisma@6.1.0)(react@19.0.0)
+      hono:
+        specifier: ^4.6.14
+        version: 4.6.14
       lucide-react:
         specifier: 0.469.0
         version: 0.469.0(react@19.0.0)
@@ -803,11 +803,6 @@ packages:
 
   '@preact/signals-core@1.8.0':
     resolution: {integrity: sha512-OBvUsRZqNmjzCZXWLxkZfhcgT+Fk8DDcT/8vD6a1xhDemodyy87UJRJfASMuSD8FaAIeGgGm85ydXhm7lr4fyA==}
-
-  '@preact/signals-react@2.3.0':
-    resolution: {integrity: sha512-g77rc7gTuPaoS5Lr80wjbN9P0t2U+YqJ6NG2krF5KLWLIoGn4uiByOv4bcZSJ41E4Nj50JLuXvdQEGlpU6cOug==}
-    peerDependencies:
-      react: ^16.14.0 || 17.x || 18.x || 19.x
 
   '@prisma/client@6.1.0':
     resolution: {integrity: sha512-AbQYc5+EJKm1Ydfq3KxwcGiy7wIbm4/QbjCKWWoNROtvy7d6a3gmAGkKjK0iUCzh+rHV8xDhD5Cge8ke/kiy5Q==}
@@ -2032,6 +2027,10 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  hono@4.6.14:
+    resolution: {integrity: sha512-j4VkyUp2xazGJ8eCCLN1Vm/bxdvm/j5ZuU9AIjLu9vapn2M44p9L3Ktr9Vnb2RN2QtcR/wVjZVMlT5k7GJQgPw==}
+    engines: {node: '>=16.9.0'}
 
   hotscript@1.0.13:
     resolution: {integrity: sha512-C++tTF1GqkGYecL+2S1wJTfoH6APGAsbb7PAWQ3iVIwgG/EFseAfEVOKFgAFq4yK3+6j1EjUD4UQ9dRJHX/sSQ==}
@@ -3554,12 +3553,6 @@ snapshots:
 
   '@preact/signals-core@1.8.0': {}
 
-  '@preact/signals-react@2.3.0(react@19.0.0)':
-    dependencies:
-      '@preact/signals-core': 1.8.0
-      react: 19.0.0
-      use-sync-external-store: 1.4.0(react@19.0.0)
-
   '@prisma/client@6.1.0(prisma@6.1.0)':
     optionalDependencies:
       prisma: 6.1.0
@@ -4903,6 +4896,8 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  hono@4.6.14: {}
 
   hotscript@1.0.13: {}
 

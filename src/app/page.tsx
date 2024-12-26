@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { AllUsers } from "@/components/home/allUsers";
+import { AllUsers, CheckHono } from "@/components/home/allUsers";
 import { Counter, Counter2 } from "@/components/home/counter";
 import { UserDetails } from "@/components/home/user-details";
 import { ModeToggle } from "@/components/ui/mode-toggle";
@@ -15,6 +15,10 @@ export default function Home() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <AllUsers />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <CheckHono />
       </Suspense>
 
       <Counter />
